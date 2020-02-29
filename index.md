@@ -2,10 +2,12 @@
 
 ---
 
-### Jumlah Pengguna Facebook & Ranking Januari 2020
-
-[Project 1 Title](/sample_page)
+### Data Pengguna Facebook per Januari 2020
 <img src="images/JumlahUserFB.png?raw=true"/>
+Data ranking merupakan data Ordinal.
+<img src="images/JumlahUserFB2.png?raw=true"/>
+Data pengguna dalam satuan jutaan. Rata-rata yang diperoleh sebesar 262,35 yang tersebar di 10 negara.<p>Sedangkan untuk standar Deviasi-nya sebesar 69,05
+<p><img src="images/JumlahUserFB3.png?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
@@ -31,5 +33,5 @@
 
 
 ---
-<p style="font-size:11px">Halaman ini saya dapat dari <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
+<p style="font-size:11px">Data ini saya dapatkan dari<a href="https://sproutsocial.com/insights/new-social-media-demographics/">sproutsocial</a></p>
 <!-- Remove above link if you don't want to attibute -->

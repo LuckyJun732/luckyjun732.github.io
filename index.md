@@ -5,7 +5,7 @@
 ### Jumlah Pengguna Facebook & Ranking Januari 2020
 
 [Project 1 Title](/sample_page)
-<img src="images/JumlahUserFB?raw=true"/>
+<img src="images/JumlahUserFB.png?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)

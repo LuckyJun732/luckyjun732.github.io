@@ -119,17 +119,39 @@ Output :<br>
   </tbody>
 </table>
 
+<br>
+Sumber : https://github.com/nicodv/kmodes bagian csv<br>
+
+<pre>import numpy as np
+from kmodes.kmodes import KModes
+
+# random categorical data
+data = np.random.choice(20, (100, 10))
+
+km = KModes(n_clusters=4, init='Huang', n_init=5, verbose=1)
+
+clusters = km.fit_predict(data)
+
+# Print the cluster centroids
+print(km.cluster_centroids_)</pre>
+
+<pre>import numpy as np
+from kmodes.kprototypes import KPrototypes
+
+syms = np.genfromtxt('soybeans.csv', dtype=str, delimiter=',')[:, 0]
+X = np.genfromtxt('soybeans.csv', dtype=object, delimiter=',')[:, 1:]
+X[:, 0] = X[:, 0].astype(float)
+
+kproto = KPrototypes(n_clusters=2, init='Cao', verbose=2)
+clusters = kproto.fit_predict(X, categorical=[9, 2])
+
+print(kproto.cluster_centroids_)
+print(kproto.cost_)
+print(kproto.n_iter_)
+
+for s, c in zip(syms, clusters):
+    print("Symbol: {}, cluster:{}".format(s, c))</pre>
 
 
-<img src="images/JumlahUserFB.png?raw=true"/>
-Data ranking merupakan data Ordinal.
-<img src="images/JumlahUserFB2.png?raw=true"/>
-Data pengguna dalam satuan jutaan. Rata-rata yang diperoleh sebesar 262,35 yang tersebar di 10 negara.<br>Sedangkan untuk standar Deviasi-nya sebesar 69,05
-<r><img src="images/JumlahUserFB3.png?raw=true"/>
-
----
-<img src="images/JumlahUserFB4.png?raw=true"/>
-
----
-<p style="font-size:11px">Data ini saya dapatkan dari <a href="https://sproutsocial.com/insights/new-social-media-demographics/">sproutsocial</a></p>
+<p style="font-size:11px">Berasal dari<a href="https://www.google.co.uk/">Google UK</a></p>
 <!-- Remove above link if you don't want to attibute -->

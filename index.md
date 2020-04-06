@@ -1,8 +1,25 @@
-## Tugas 1 - Data Mining
+## K-Modes & K-Prototype
 
 ---
 
-### Data Pengguna Facebook per Januari 2020
+### K-Modes Clustering
+Tipe Data Kategorical<r>
+Sumber : https://archive.ics.uci.edu/ml/datasets/bank+marketing<r>
+<pre># supress warnings
+import warnings
+warnings.filterwarnings('ignore')
+
+# Importing all required packages
+import numpy as np
+import pandas as pd
+
+# Data viz lib
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+from matplotlib.pyplot import xticks</pre>
+
+
 <img src="images/JumlahUserFB.png?raw=true"/>
 Data ranking merupakan data Ordinal.
 <img src="images/JumlahUserFB2.png?raw=true"/>
